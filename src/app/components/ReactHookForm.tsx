@@ -2,7 +2,6 @@
 import React, { useCallback, useState } from "react";
 import { useDropzone } from "react-dropzone";
 import Image from "next/image";
-
 interface FileWithPreview extends File {
   preview: string;
 }
@@ -99,7 +98,7 @@ export const ReactHookForm = () => {
             <span onClick={() => removeRejected(file.name)}>Cross</span>
           </li>
         ))}
-      </ul>
+      </ul>{" "}
       <button type="submit">Submit</button>
     </form>
   );
